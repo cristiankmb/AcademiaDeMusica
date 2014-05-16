@@ -6,6 +6,7 @@
         <title>Facelet Title</title>
         <h:outputStylesheet name="css/jsfcrud.css"/>
         <link href="login-box.css" rel="stylesheet" type="text/css" />
+            <link href="menu.css" rel="stylesheet" type="text/css" />
     </h:head>
     <h:body>
 
@@ -34,11 +35,18 @@
             </div>
         </form>
 
-        <h:link outcome="/cursos/List" value="Show All Cursos Items"/>
-        <br />
-        <h:link outcome="/estudiantes/List" value="Show All Estudiantes Items"/>
-        <br />
-        <h:link outcome="/profesores/List" value="Show All Profesores Items"/>
+        <div class="menudes">
+
+            
+       <h:link  outcome="/cursos/List" value="CURSOS"/>
+      
+        <h:link outcome="/estudiantes/List" value="ESTUDIANTES"/>
+        
+        <h:link outcome="/profesores/List" value="PROFESORES"/>
+            
+            
+<div class="marca"></div>
+</div>
     </h:body>
 
 
