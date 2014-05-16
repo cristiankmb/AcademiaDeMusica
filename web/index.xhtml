@@ -7,20 +7,20 @@
         <h:outputStylesheet name="css/jsfcrud.css"/>
     </h:head>
     <h:body>
-        Hello from Facelets
 
-        
-        <input type="text" name="smsd" value="sssss" readonly="readonly" />
-        
-        <input type="text" name="TxtUser" value="Usuario" />
+
+        <form >
+            <!--Creamos los campos y un label para cada uno de ellos-->
+            <label name="TxtUser">Usuario: </label>
+            <input type="text" name="InpUser" id="InpUser"/><br />
+            <label name="TxtPassword">Contraseña: </label>
+            <!--Este input debe ser -type="password" para que no se muestren los caracteres-->
+            <input type="password" name="InpPassword" id="InpPassword"/><br />
+            <!--Al dar click al botón se ejecutará el -action-->
+            <input type="submit" value="Iniciar Sesión"/>
+        </form>
         <br />
-        <input type="text" name="InpUser" value="" size="30" />
-        <br />
-        <input type="text" name="TxtPassword" value="Contraseña" />
-        <br />
-        <input type="password" name="InpPassword" value="" size="30" />
-        <br />
-        
+
         <h:link outcome="/cursos/List" value="Show All Cursos Items"/>
         <br />
         <h:link outcome="/estudiantes/List" value="Show All Estudiantes Items"/>
