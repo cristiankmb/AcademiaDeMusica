@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -53,3 +54,53 @@
 
 </html>
 
+=======
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+        <link href="login-box.css" rel="stylesheet" type="text/css" />
+    </h:head>
+    <h:body>
+
+
+        <form>
+            <div style="padding: 100px 0 0 250px;">
+
+
+                <div id="login-box">
+
+                    <H2>Login</H2>
+                    <br />
+                    <br />
+                    <div id="login-box-name" style="margin-top:20px;">Usuario:</div><div id="login-box-field" style="margin-top:20px;"><input name="q" class="form-login" title="Username" value="#{mBLogin.usuario}" size="30" maxlength="2048" /></div>
+                    <div id="login-box-name">Contraseña:</div><div id="login-box-field"><input name="q" type="password" class="form-login" title="Password" value="#{mBLogin.contraseña}" size="30" maxlength="2048" /></div>
+                    <br />
+
+                    <span class="login-box-options"><input type="checkbox" name="1" value="1"/> Remember Me <a href="#" style="margin-left:30px;">Forgot password?</a></span>
+                    <br />
+                    <br />
+                    <h:commandButton value="Ingresar" action="#{mBLogin.login()}" image="images/login-btn.png"  style="margin-left: 40%;"></h:commandButton><h:messages/>
+                    
+
+
+                </div>
+
+            </div>
+        </form>
+
+        <h:link outcome="/cursos/List" value="Show All Cursos Items"/>
+        <br />
+        <h:link outcome="/estudiantes/List" value="Show All Estudiantes Items"/>
+        <br />
+        <h:link outcome="/profesores/List" value="Show All Profesores Items"/>
+    </h:body>
+
+
+
+</html>
+
+>>>>>>> 4e8188fea5da97396ac43dfe2db8c6a23950b6d8
